@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Java Task </title>
+</head>
+<body>
+
+    <h2 style="color: darkred;"> 1.	Write a program to check if a number is positive or negative.</h2>
+    <h3>CODE</h3>
+    <p style="color: blue;">
+        import java.util.Scanner;<br>
+class posorneg{<br>
+    public static void main(String[] args){<br>
+        Scanner sc=new Scanner(System.in);<br>
+        System.out.println("Enter the number : ");<br>
+        int num=sc.nextInt();<br>
+        if(num<0){ <br>
+            System.out.println("The above number is Negative");<br>
+        }<br>
+        else{<br>
+            System.out.println("The above number is Positive");<br>
+        }<br>
+    }<br>
+}<br>
+<h3>OUTPUT</h3>
+<img  src="assets/op1.png" alt="">
+    </p>
+    <h2 style="color: darkred;"> Question 2.	Write a program to check if a number is even or odd.</h2>
+    <h3>CODE</h3>
+    <p style="color: blue;">
+       import java.util.Scanner;<br>
+class oddoreven {<br>
+    public static void main(String[] args){<br>
+        Scanner sc=new Scanner(System.in);<br>
+        System.out.println("Enter the number : ");<br>
+        int num=sc.nextInt();<br>
+        if(num % 2 == 0){<br>
+            System.out.println("The above number is Even");<br>
+        }<br>
+        else{<br>
+            System.out.println("The above number is Odd");<br>
+        }<br>
+    }<br>
+}<br>
+<h3>OUTPUT</h3>
+<img  src="assets/op2.png" alt="">
+    </p>
+    <h2 style="color: darkred;">Question 3.	Write a program to find the largest of three numbers.</h2>
+    <h3>CODE</h3>
+    <p style="color: blue;">
+       import java.util.Scanner;<br>
+class largenum {<br>
+    public static void main(String[] args){<br>
+        Scanner sc=new Scanner(System.in);<br>
+        System.out.println("Enter the First Number : ");<br>
+        int num1=sc.nextInt();<br>
+
+        System.out.println("Enter the Second Number : ");<br>
+        int num2=sc.nextInt();<br>
+
+        System.out.println("Enter the Third Number :");<br>
+        int num3=sc.nextInt();<br>
+
+        if(num1>num2 && num1>num3)<br>
+        {<br>
+            System.out.println("The First Number is Greater than others.");<br>
+        }<br>
+        else if(num2>num1 && num2>num3) <br>
+        {<br>
+            System.out.println("The Second Number is Greater than others. ");<br>
+        }<br>
+        else<br>
+        {<br>
+            System.out.println("The Third Number is Greater than others. ");<br>
+        }<br>
+    }<br>
+}<br>
+<h3>OUTPUT</h3>
+<img  src="assets/op3.png" alt="">
+    </p>
+    <h2 style="color: darkred;">Question 4.	Write a program to check if a number is divisible by 5.</h2>
+    <h3>CODE</h3>
+<p style="color: blue;">
+       import java.util.Scanner; <br>
+class divbyfive {<br>
+    public static void main(String[] args){<br>
+        Scanner sc=new Scanner(System.in);<br>
+        System.out.println("Enter the number : ");<br>
+        int num=sc.nextInt();<br>
+        if(num % 5 == 0){<br>
+            System.out.println("The Number is divisible by 5");<br>
+        }<br>
+        else{<br>
+            System.out.println("The Number is not divisible by 5");<br>
+        }<br>
+    }<br>
+}<br>
+<h3>OUTPUT</h3>
+<img  src="assets/op4.png" alt="">
+    </p>
+    <h2 style="color: darkred;">Question 5.	Write a program to check if a number is divisible by 3 and 5.</h2>
+    <h3>CODE</h3>
+    <p style="color: blue;">
+       import java.util.Scanner;<br>
+class divby3and5 {<br>
+    public static void main(String[] args){<br>
+        Scanner sc=new Scanner(System.in);<br>
+        System.out.println("Enter the number : ");<br>
+        int num=sc.nextInt();<br>
+
+        if (num % 3 == 0 && num % 5 ==0)<br>
+        {<br>
+            System.out.println("The number is divisible by both 5 and 3");<br>
+        }<br>
+        else{<br>
+            System.out.println("The Number is not divisible by both 5 and 3"); <br>
+        }<br>
+    }<br>
+}<br>
+<h3>OUTPUT</h3>
+<img  src="assets/op5.png" alt="">
+    </p>
+    <h2 style="color: darkred;">Question 6. Write a program to check if a person is eligible to vote.</h2>
+    <h3>CODE</h3>
+    <p style="color: blue;">
+       import java.util.Scanner; <br>
+class eligible{<br>
+    public static void main(String[] args){<br>
+        Scanner sc=new Scanner(System.in);<br>
+        System.out.println("Enter the number : ");<br>
+        int age=sc.nextInt();<br>
+
+        if (age>=18)<br>
+        {<br>
+            System.out.println("They are eligible for voting");<br>
+        }<br>
+        else{<br>
+            System.out.println("They are not eligible for voting");<br>
+        }<br>
+    }<br>
+}<br>
+<h3>OUTPUT</h3>
+<img  src="assets/op6.png" alt="">
+    </p>
+    <h2 style="color: darkred;">Question 7.	Write a program to check if a number is tgree-digit number.</h2>
+    <h3>CODE</h3>
+    <p style="color: blue;">
+       import java.util.Scanner; <br>
+class threedigit{<br>
+    public static void main(String[] args){<br>
+        Scanner sc=new Scanner(System.in);<br>
+        System.out.println("Enter the number : ");<br>
+        int num=sc.nextInt();<br>
+
+        if(num>=100 && num<=999 || num>=-100 && num<=-999)<br>
+        {<br>
+            System.out.println("They are Three digit value");<br>
+        }<br>
+        else<br>
+        {<br>
+            System.out.println("They are not Three digit value");<br>
+        }<br>
+        sc.close();<br>
+    }<br>
+}<br>
+<h3>OUTPUT</h3>
+<img  src="assets/op7.png" alt="">
+    </p>
+    <h2 style="color: darkred;">Question 8.	Write a program to check if two numbers are equal or not.</h2>
+    <h3>CODE</h3>
+    <p style="color: blue;">
+       import java.util.Scanner;<br>
+class eqornot{<br>
+    public static void main(String[] args){<br>
+        Scanner sc=new Scanner(System.in);<br>
+        System.out.println("Enter the first number : ");<br>
+        int num1=sc.nextInt();<br>
+
+        System.out.println("Enter the second number");<br>
+        int num2=sc.nextInt();<br>
+
+
+
+        if(num1==num2) <br>
+        {<br>
+            System.out.println("They are Equal");<br>
+        }<br>
+        else<br>
+        {<br>
+            System.out.println("They are not Equal");<br>
+        }<br>
+        sc.close();<br>
+    }<br>
+}<br>
+<h3>OUTPUT</h3>
+<img  src="assets/op8.png" alt="">
+    </p>
+
+    <h2 style="color: darkred;">Question 9.	Write a program to display grade (A/B/C/D) based on marks.</h2>
+    <h3>CODE</h3>
+    <p style="color: blue;">
+       import java.util.Scanner; <br>
+class grade{<br>
+    public static void main(String[] args){<br>
+        Scanner sc=new Scanner(System.in);<br>
+        System.out.println("Enter the first number : ");<br>
+        int mark=sc.nextInt();<br>
+
+        
+        if(mark>=90)<br>
+        {<br>
+            System.out.println("A Grade");<br>
+        }<br>
+        else if(mark>=80 && mark<90)<br>
+        {<br>
+            System.out.println("B Grade");<br>
+        }<br>
+        else if(mark>=70 && mark<80)<br>
+        {<br>
+            System.out.println("C Grade");<br>
+        }<br>
+        else{<br>
+            System.out.println("D Grade");<br>
+        }<br>
+        sc.close();<br>
+    }<br>
+}<br>
+<h3>OUTPUT</h3>
+<img  src="assets/op9.png" alt="">
+    </p>
+    <h2 style="color: darkred;">Question 10.	Write a program to check if a year is leap or not.</h2>
+    <h3>CODE</h3>
+    <p style="color: blue;">
+       import java.util.Scanner; <br>
+class leapornot{ <br>
+    public static void main(String[] args){<br>
+        Scanner sc=new Scanner(System.in);<br>
+        System.out.println("Enter the Year : ");<br>
+        int year=sc.nextInt();<br>
+
+        
+        if(year % 4 == 0 && year % 100 != 0) <br>
+        {<br>
+            System.out.println(year+  " is a leap year" );<br>
+        }<br>
+        else<br>
+        {<br>
+            System.out.println(year+ " is not leap yaer");<br>
+        }<br>
+        sc.close();<br>
+    }<br>
+}<br>
+<h3>OUTPUT</h3>
+<img  src="assets/op10.png" alt="">
+    </p>
+   
+    <h2 style="color: darkred;">Question 11. Write a program to find the smallest of two numbers.</h2>
+    <h3>CODE</h3>
+    <p style="color: blue;">
+       import java.util.Scanner; <br>
+class small2{<br>
+    public static void main(String[] args){<br>
+        Scanner sc=new Scanner(System.in);<br>
+        System.out.println("Enter the First Number : ");<br>
+        int num1=sc.nextInt();<br>
+
+        System.out.println("Enter the Second Number : ");<br>
+        int num2=sc.nextInt();<br>
+
+        if(num1<num2)<br>
+        {<br>
+            System.out.println("The First Number is Smaller than to another Number.");<br>
+        }<br>
+        
+        else<br>
+        {<br>
+            System.out.println("The Second Number is Smaller than to another Number. ");<br>
+        }<br>
+    }<br>
+}<br>
+<h3>OUTPUT</h3>
+<img  src="assets/op11.png" alt="">
+    </p>
+    <h2 style="color: darkred;">Question 12. Write a program to find the smallest of three numbers.</h2>
+    <h3>CODE</h3>
+    <p style="color: blue;">
+       import java.util.Scanner; <br>
+class small3 {<br>
+    public static void main(String[] args){<br>
+        Scanner sc=new Scanner(System.in);<br>
+        System.out.println("Enter the First Number : ");<br>
+        int num1=sc.nextInt();<br>
+
+        System.out.println("Enter the Second Number : ");<br>
+        int num2=sc.nextInt();<br>
+
+        System.out.println("Enter the Third Number :");<br>
+        int num3=sc.nextInt();<br>
+
+        if(num1<num2 && num1<num3) <br>
+        {<br>
+            System.out.println("The First Number is Smaller than others.");<br>
+        }<br>
+        else if(num2<num1 && num2<num3)<br>
+        {<br>
+            System.out.println("The Second Number is Smaller than others. ");<br>
+        }<br>
+    
+        else<br>
+        {<br>
+            System.out.println("The Third Number is Smaller than others. ");<br>
+        }<br>
+    }<br>
+}<br>
+<h3>OUTPUT</h3>
+<img  src="assets/op12.png" alt="">
+    </p>
+    </body>
+</html>
